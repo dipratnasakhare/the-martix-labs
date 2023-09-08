@@ -6,40 +6,37 @@ import firstOutline from "../../icons/outline (1).png";
 import secondOutline from "../../icons/outline (2).png";
 import thirdOutline from "../../icons/outline (3).png";
 import forthOutline from "../../icons/outline (4).png";
-import { PairAddress } from "./PairAddress";
 
-export const Home = ({bool}) => {
+export const PairAddress = () => {
   const [bitcoinArr, setBitcoinArr] = useState([]);
-  const [searchValue, setSearchValue] = useState("");
-
+  const [pairAdd, setpairAdd] = useState("");
 
   const getData = async () => {
     try {
-      let res = await axios(
-        `https://api.dexscreener.com/latest/dex/search?q=${searchValue}`
-      );
+        let res = await axios(
+            `https://api.dexscreener.com/latest/dex/pairs/solana/${pairAdd}`
+          );
       setBitcoinArr(res.data.pairs);
+      console.log(res);
     } catch (err) {
       console.log(err);
     }
   };
-
   const HandelChange = (e) => {
-    setSearchValue(e.target.value);
+    setpairAdd(e.target.value);
   };
 
   useEffect(() => {
-    if (searchValue == "") {
+    if (pairAdd == "") {
       setBitcoinArr([]);
     }
 
     getData();
-  }, [searchValue]);
+  }, [pairAdd]);
 
   return (
-    <>
-    {bool ? <div className={homecss.Home}>
-      <div className={homecss.Hamburger}>
+    <div className={homecss.Home}>
+           <div className={homecss.Hamburger}>
         <div>
           <img
             src="https://icon-library.com/images/hamburger-icon-white/hamburger-icon-white-6.jpg"
@@ -57,7 +54,7 @@ export const Home = ({bool}) => {
       <div className={homecss.navbarSearch}>
         <form>
           <input
-            value={searchValue}
+            value={pairAdd}
             onChange={(e) => HandelChange(e)}
             type="search"
             placeholder="Search"
@@ -67,7 +64,8 @@ export const Home = ({bool}) => {
         <button className={homecss.connectBtn}>Connect</button>
       </div>
 
-       <div className={homecss.bitcoinsData}>
+        pair address
+      <div className={homecss.bitcoinsData}>
         {bitcoinArr.length !== 0 && (
           <p className={homecss.headingToken}>Token Search Results</p>
         )}
@@ -158,8 +156,7 @@ export const Home = ({bool}) => {
               </div>
             );
           })}
-      </div> 
-    </div> :  <PairAddress/>}
-    </>
+      </div>
+    </div>
   );
 };

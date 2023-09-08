@@ -7,9 +7,8 @@ import pair_logo from "../../icons/baseline-pair.png";
 import facebook from "../../icons/facebook.png";
 import linkedin from "../../icons/linkedin.png";
 import twitter from "../../icons/twitter.png";
-export const Navbar = () => {
+export const Navbar = ({bool , setBool}) => {
 
-  const [bool, setBool] = useState(true)
 
   const HandelClick = () => {
     setBool(!bool)

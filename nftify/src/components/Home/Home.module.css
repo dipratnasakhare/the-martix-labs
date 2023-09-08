@@ -8,7 +8,6 @@
   position: absolute;
   overflow: hidden;
   overflow: scroll;
-
 }
 
 .navbarSearch {
@@ -22,7 +21,6 @@
   margin-top: 24px;
   margin-bottom: 0px;
 }
-
 
 .inputSearch {
   display: flex;
@@ -54,14 +52,12 @@ input[type="search"] {
   color: white;
   border: none;
 
-
   width: 435px;
   height: 40px;
   top: 27px;
   left: 353px;
   border-radius: 20px;
   border: 1px;
-  
 }
 
 input[type="search"],
@@ -93,133 +89,184 @@ button[type="submit"]:hover {
   opacity: 1;
 }
 
-.connectBtn{
-    /* display: inline-flex; */
-    /* appearance: none; */
+.connectBtn {
+  /* display: inline-flex; */
+  /* appearance: none; */
+  align-items: center;
+  justify-content: center;
+  /* outline: transparent solid 2px; */
+  /* outline-offset: 2px; */
+  line-height: 1.2;
+  height: 52px;
+  width: 156px;
+  border-radius: 20px;
+  background: linear-gradient(
+    131deg,
+    rgb(124, 15, 53) 0%,
+    rgb(88, 18, 102) 100%
+  );
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  border: none;
+}
+
+.bitcoinsData {
+  font-family: Poppins;
+  margin: 65px;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin-left: 20%;
+  /* margin-top: 27px; */
+  color: white;
+  margin-top: 0px;
+}
+
+.mainDiv {
+  display: flex;
+}
+
+.mainBox {
+  height: 165px;
+  background: rgba(57, 5, 84, 1);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px 30px 0px 20px;
+}
+
+.heading {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.Box {
+  display: flex;
+}
+
+.firstDiv {
+  color: rgb(245, 245, 245);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+p {
+  width: 110px;
+  overflow: hidden;
+}
+
+.headingToken {
+  color: rgb(247, 249, 249);
+  font-family: "Work Sans";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  width: 100%;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.mainBox {
+  /* height: 100%;
+            width:100%; */
+  border-collapse: collapse;
+  position: relative;
+}
+
+.iconBox {
+  width: 56px;
+  height: 56px;
+  border-radius: 9999px;
+  cursor: pointer;
+  background: rgb(150, 2, 82);
+  border: 1px solid red;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 15px;
+}
+
+.Hamburger {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .navbarSearch {
+    display: grid;
+    margin: 0px;
+    width: 80%;
+    margin: auto;
+  }
+
+  input[type="search"] {
+    width: 99%;
+    height: 37.586181640625px;
+    top: 81.67819213867188px;
+    left: 31px;
+    border-radius: 15.034472465515137px;
+    border: 0.75172358751297px;
+  }
+
+  .Hamburger {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+  }
+  .Hamburger img {
+    width: 16.71428680419922px;
+    height: 12.857142448425293px;
+    top: 39.57142639160156px;
+    left: 35.64306640625px;
+    border: 1.7142857313156128px;
+  }
+
+  .Hamburger p {
+    color: white;
+    font-family: Pacifico;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .connectBtn {
+    display: none;
+  }
+
+  .connectBtn2 {
     align-items: center;
     justify-content: center;
-    /* outline: transparent solid 2px; */
-    /* outline-offset: 2px; */
     line-height: 1.2;
     height: 52px;
     width: 156px;
     border-radius: 20px;
-    background: linear-gradient(131deg, rgb(124, 15, 53) 0%, rgb(88, 18, 102) 100%);
+    background: linear-gradient(
+      131deg,
+      rgb(124, 15, 53) 0%,
+      rgb(88, 18, 102) 100%
+    );
     font-family: Poppins;
     font-size: 16px;
     font-weight: 600;
     color: rgb(255, 255, 255);
     border: none;
-}
-
-.bitcoinsData {
-    font-family: Poppins;
-    margin: 65px;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    margin-left: 20%;
-    /* margin-top: 27px; */
-    color: white;
-    margin-top: 0px;
-
-}
-
-.mainDiv{
-    display: flex;
-}
-
-.mainBox{
-    height: 165px;
-    background: rgba(57, 5, 84, 1);
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px 30px 0px 20px;
-}
-
-
-.heading{
-    margin-bottom: 12px;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-
-.Box{
-    display: flex;
-}
-
-.firstDiv{
-    color: rgb(245, 245, 245);
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-
-p{
-    width: 110px;
-    overflow: hidden;
-}
-
-
-.headingToken{
-    color: rgb(247, 249, 249);
-    font-family: "Work Sans";
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 28px;
-    width: 100%;
-    margin-left: 5px;
-    margin-bottom: 5px;
-}
-
-.mainBox{
-    /* height: 100%;
-            width:100%; */
-            border-collapse: collapse;
-            position: relative;
-
-}
-
-.iconBox{
-    width: 56px;
-    height: 56px;
-    border-radius: 9999px;
-    cursor: pointer;
-    background: rgb(150, 2, 82);
-    border: 1px solid red;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 15px;
-
-}
-
-.Hamburger{
-  display: none;
-}
-
-
-
-@media only screen and (max-width: 900px) {
-  .navbarSearch{
-    display: grid;
-    margin: 0px;
-    width: 80%;
   }
-  .Hamburger{
+
+  .mainDiv {
     display: grid;
-    display: flex;
+  }
+
+  .bitcoinsData {
     width: 80%;
     margin: auto;
-    justify-content: space-around;
-    margin: 10px;
-  }
-
-  .Hamburger p{
-    color: white;
   }
 }
