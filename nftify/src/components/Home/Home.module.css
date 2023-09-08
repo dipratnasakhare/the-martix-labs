@@ -1,0 +1,225 @@
+.Home {
+  /* filter: brightness(30%); */
+  background-image: url("../../icons/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  overflow: scroll;
+
+}
+
+.navbarSearch {
+  font-family: Poppins;
+  margin: 65px;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin-left: 24%;
+  /* margin-left: 21rem; */
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 0px;
+}
+
+
+.inputSearch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+form {
+  color: #555;
+  display: flex;
+  padding: 2px;
+  border: 1px solid currentColor;
+  border-radius: 5px;
+  margin: 0 0 30px;
+
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+input[type="search"] {
+  background: transparent;
+  margin: 0;
+  padding: 7px 8px;
+  font-size: 18px;
+  color: inherit;
+  border: 1px solid transparent;
+  color: white;
+  border: none;
+
+
+  width: 435px;
+  height: 40px;
+  top: 27px;
+  left: 353px;
+  border-radius: 20px;
+  border: 1px;
+  
+}
+
+input[type="search"],
+textarea {
+  border: none;
+  outline: none;
+}
+
+input[type="search"]::placeholder {
+  color: #bbb;
+}
+
+button[type="submit"] {
+  text-indent: -999px;
+  overflow: hidden;
+  width: 40px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat center;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+button[type="submit"]:hover {
+  opacity: 1;
+}
+
+.connectBtn{
+    /* display: inline-flex; */
+    /* appearance: none; */
+    align-items: center;
+    justify-content: center;
+    /* outline: transparent solid 2px; */
+    /* outline-offset: 2px; */
+    line-height: 1.2;
+    height: 52px;
+    width: 156px;
+    border-radius: 20px;
+    background: linear-gradient(131deg, rgb(124, 15, 53) 0%, rgb(88, 18, 102) 100%);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+.bitcoinsData {
+    font-family: Poppins;
+    margin: 65px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-left: 20%;
+    /* margin-top: 27px; */
+    color: white;
+    margin-top: 0px;
+
+}
+
+.mainDiv{
+    display: flex;
+}
+
+.mainBox{
+    height: 165px;
+    background: rgba(57, 5, 84, 1);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px 30px 0px 20px;
+}
+
+
+.heading{
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.Box{
+    display: flex;
+}
+
+.firstDiv{
+    color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+p{
+    width: 110px;
+    overflow: hidden;
+}
+
+
+.headingToken{
+    color: rgb(247, 249, 249);
+    font-family: "Work Sans";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    width: 100%;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.mainBox{
+    /* height: 100%;
+            width:100%; */
+            border-collapse: collapse;
+            position: relative;
+
+}
+
+.iconBox{
+    width: 56px;
+    height: 56px;
+    border-radius: 9999px;
+    cursor: pointer;
+    background: rgb(150, 2, 82);
+    border: 1px solid red;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 15px;
+
+}
+
+.Hamburger{
+  display: none;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+  .navbarSearch{
+    display: grid;
+    margin: 0px;
+    width: 80%;
+  }
+  .Hamburger{
+    display: grid;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+    margin: 10px;
+  }
+
+  .Hamburger p{
+    color: white;
+  }
+}
